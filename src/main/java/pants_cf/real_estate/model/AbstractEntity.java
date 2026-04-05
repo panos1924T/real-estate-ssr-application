@@ -19,7 +19,7 @@ import java.time.Instant;
 @NoArgsConstructor
 @AllArgsConstructor
 @EntityListeners(AuditingEntityListener.class)
-public class AbstractEntity {
+public abstract class AbstractEntity {
 
     @CreatedDate
     @Column(name = "created_at", nullable = false, updatable = false, columnDefinition = "DATETIME")
