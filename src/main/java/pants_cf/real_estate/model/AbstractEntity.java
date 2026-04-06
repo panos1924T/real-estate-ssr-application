@@ -13,6 +13,12 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.Instant;
 
+/**
+ * AbstractEntity serves as a base class for entities that require auditing functionality.
+ * It includes fields for recording creation and last modification timestamps, along with
+ * the necessary JPA and auditing annotations to automatically handle these fields.
+ */
+
 @MappedSuperclass
 @Getter
 @Setter
